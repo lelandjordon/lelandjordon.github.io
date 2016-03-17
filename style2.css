@@ -1,0 +1,56 @@
+h1 {
+	font-family: helvetica;
+	text-shadow: 2px 2px slategray;
+}
+
+/*#contras, h1 {
+
+}*/
+
+.contras {
+	position: relative;
+	height: 400px;
+}
+
+.contras p {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 10px;
+	border: 1px solid #FFF;
+	width: 218px;
+	color: #FFF; margin: 5px;
+ }
+
+body {
+	text-align: center;
+	margin-top: 10px;
+	color: white;
+	background-color: gray;
+	font-family: helvetica;
+	font-weight: normal;
+	text-shadow: 1px 1px slategray;
+}
+
+footer {
+	position:center;
+	font-size:10pt;
+	margin-bottom:10em;
+	border-top:2px solid #888;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:hover {
+    color: pink;
+}
+
+a:active {
+    color: blue;
+}
