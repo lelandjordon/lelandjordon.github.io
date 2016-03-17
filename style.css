@@ -1,0 +1,39 @@
+h1 {
+	text-align: center;
+	margin-top: 10px;
+	color: white;
+	font-family: helvetica;
+	text-shadow: 2px 2px slategray;
+}
+
+body {
+	text-align: center;
+	margin-top: 10px;
+	color: white;
+	background-color: gray;
+	font-family: helvetica;
+	font-weight: normal;
+	text-shadow: 1px 1px slategray;
+}
+
+footer {
+	position:center;
+	font-size:10pt;
+	margin-bottom:10em;
+	border-top:2px solid #888;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:hover {
+    color: pink;
+}
+
+a:active {
+    color: blue;
