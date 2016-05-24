@@ -3,10 +3,6 @@ h1 {
 	text-shadow: 2px 2px slategray;
 }
 
-/*#contras, h1 {
-
-}*/
-
 .billboard {
 	position: relative;
 	height: 400px;
@@ -43,20 +39,20 @@ body {
 }
 
 #all_about {
-
-	/*text-align: left;*/
 	background-color: inherit;
 	opacity: 0.3;
 	filter: alpha(opacity=40);
-	/*height: 300px;*/
 	width: intrinsic;           /* Safari */
 	width: -moz-max-content;    /* Firefox/Gecko */
 	width: -webkit-max-content; /* Chrome */
 	background-color: black;
-	/*text-align: center;*/
-	/*margin-left: auto;*/
-	/*margin-right: auto;*/
 	padding: 1em;
+}
+
+.about_list {
+	position: relative;
+	text-align: left;
+	z-index: 2;
 }
 
 
@@ -67,18 +63,19 @@ footer {
 	border-top:2px solid #888;
 }
 
+
 a:link {
-    color: white;
+	color: white;
 }
 
 a:visited {
-    color: lightgray;
+	color: lightgray;
 }
 
 a:hover {
-    color: pink;
+	color: pink;
 }
 
 a:active {
-    color: blue;
+	color: blue;
 }
