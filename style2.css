@@ -7,9 +7,18 @@ h1 {
 
 }*/
 
-.contras {
+.billboard {
 	position: relative;
 	height: 400px;
+}
+
+.topright {
+	position: absolute;
+	top: 8px;
+	right: 16px;
+	color: white;
+	font-family: helvetica;
+	font-weight: bold;
 }
 
 .contras p {
@@ -21,6 +30,10 @@ h1 {
 	width: 218px;
 	color: #FFF; margin: 5px;
  }
+
+#portrait {
+	width: 300px;
+}
 
 body {
 	text-align: center;
