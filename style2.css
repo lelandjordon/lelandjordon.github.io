@@ -35,6 +35,31 @@ body {
 	text-shadow: 1px 1px slategray;
 }
 
+#about_page {
+	background-image: url("defenceministry.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+#all_about {
+
+	/*text-align: left;*/
+	background-color: inherit;
+	opacity: 0.3;
+	filter: alpha(opacity=40);
+	/*height: 300px;*/
+	width: intrinsic;           /* Safari */
+	width: -moz-max-content;    /* Firefox/Gecko */
+	width: -webkit-max-content; /* Chrome */
+	background-color: black;
+	/*text-align: center;*/
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	padding: 1em;
+}
+
+
 footer {
 	position:center;
 	font-size:10pt;
