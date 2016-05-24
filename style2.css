@@ -21,16 +21,6 @@ h1 {
 	font-weight: bold;
 }
 
-.contras p {
-	position: absolute;
-	left: 0;
-	top: 0;
-	padding: 10px;
-	border: 1px solid #FFF;
-	width: 218px;
-	color: #FFF; margin: 5px;
- }
-
 #portrait {
 	width: 300px;
 }
