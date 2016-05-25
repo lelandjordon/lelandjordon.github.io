@@ -42,9 +42,9 @@ body {
 	width: intrinsic;           /* Safari */
 	width: -moz-max-content;    /* Firefox/Gecko */
 	width: -webkit-max-content; /* Chrome */
-	background-color: rgba(0,40,40,.4);
+	background-color: rgba(0,40,50,.3);
 	padding: 1em;
-	border:1px solid rgba(0,40,50,.5);
+	border:1px solid rgba(0,40,50,.4);
 }
 
 .about_list {
