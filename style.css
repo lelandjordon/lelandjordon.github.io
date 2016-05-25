@@ -39,14 +39,12 @@ body {
 }
 
 #all_about {
-	background-color: inherit;
-	opacity: 0.3;
-	filter: alpha(opacity=40);
 	width: intrinsic;           /* Safari */
 	width: -moz-max-content;    /* Firefox/Gecko */
 	width: -webkit-max-content; /* Chrome */
-	background-color: black;
+	background-color: rgba(0,40,40,.4);
 	padding: 1em;
+	border:1px solid rgba(0,40,50,.5);
 }
 
 .about_list {
