@@ -3,10 +3,15 @@ h1 {
 	text-shadow: 2px 2px slategray;
 }
 
-.billboard {
+#billboard {
 	position: relative;
-	height: 400px;
+	background: url("contras.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 50vw;
 }
+
 
 .topright {
 	position: absolute;
@@ -35,7 +40,7 @@ body {
 	background-image: url("defenceministry.jpg");
 	background-position: center;
 	background-attachment: fixed;
-	background-size: 100% 100%;
+	background-size: cover;
 }
 
 #all_about {
