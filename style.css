@@ -43,10 +43,16 @@ body {
 	background-size: cover;
 }
 
+#panes {
+	display: inline-block;
+	vertical-align: top;
+}
+
 #all_about {
 	width: intrinsic;           /* Safari */
 	width: -moz-max-content;    /* Firefox/Gecko */
 	width: -webkit-max-content; /* Chrome */
+	float: left;
 	background-color: rgba(0,40,50,.3);
 	padding: 1em;
 	border:1px solid rgba(0,40,50,.4);
@@ -54,10 +60,17 @@ body {
 
 .about_list {
 	position: relative;
+	/*float: left;*/
 	text-align: left;
 	z-index: 2;
 }
 
+
+#works {
+	position: relative;
+	float: right;
+	text-align: right;
+}
 
 footer {
 	position:center;
