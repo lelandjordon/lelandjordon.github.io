@@ -1,5 +1,7 @@
 # github.io
 
+http://lelandjordon.github.io/index.html
+
 This is my ever-evolving portfolio site.
 
 It was initially created as part of the pre-work assignments prior to the start of
