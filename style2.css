@@ -3,15 +3,12 @@ h1 {
 	text-shadow: 2px 2px slategray;
 }
 
-/*#contras, h1 {
 
-}*/
-/*
-.contras {
+contras selfie{
 	position: relative;
-	height: 400px;
-}*/
-/*
+	width: 400px;
+}
+
 .contras p {
 	position: absolute;
 	left: 0;
@@ -20,7 +17,7 @@ h1 {
 	border: 1px solid #FFF;
 	width: 218px;
 	color: #FFF; margin: 5px;
- }*/
+ }
 
 body {
 	text-align: center;
@@ -54,3 +51,7 @@ a:hover {
 a:active {
     color: blue;
 }
+
+/*.selfie {
+	height: 200px;
+}*/
