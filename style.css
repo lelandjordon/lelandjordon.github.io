@@ -5,7 +5,7 @@ h1 {
 
 #billboard {
 	position: relative;
-	background: url("contras.jpg");
+	background: url("assets/contras.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -37,11 +37,19 @@ body {
 }
 
 #about_page {
-	background-image: url("defenceministry.jpg");
+	background-image: url("assets/defenceministry.jpg");
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
 }
+
+#contact_page {
+	background-image: url("assets/radoback.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
 
 .panes {
 	display: inline-block;
