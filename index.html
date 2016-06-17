@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Leland Jordon</title>
   <link href="style.css" rel="stylesheet">
-
-</head>
-<body>
-
-  <div id="billboard">
-    <h1 class="topright"><em>Leland Jordon</em></h1>
-  </div>
-
-
-
-
-  <a href="about.html">About Leland</a>
-  <br>
-  <a href="contact.html">Contact info</a>
-  <br>
-  <br>
-
-
-  <button onclick="myFunction()">Click Me for a popup box</button>
-
   <script>
   function myFunction() {
-    alert("Now close me!");
+    alert("This was my first-ever Javascript function.  I've learned much more since then!");
   }
   </script>
+</head>
 
+<body id="main_page">
+
+  <header>
+    <ul class="topnav">
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact.html">Reach Me</a></li>
+      <li class="topright"><a href="index.html">Leland Jordon</a></li>
+    </ul>
+  </header>
+
+
+
+  <footer>
+    <button onclick="myFunction()">Click Me for a popup box</button>
+
+    <p id="date">
+
+      <script>
+      document.getElementById("date").innerHTML = Date();
+      </script>
+    </p>
+  </footer>
 
 </body>
-
-<footer>
-  <p id="date">
-
-    <script>
-    document.getElementById("date").innerHTML = Date();
-    </script>
-  </p>
-</footer>
