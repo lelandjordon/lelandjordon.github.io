@@ -1,36 +1,57 @@
 h1 {
 	font-family: helvetica;
-	text-shadow: 2px 2px slategray;
+	text-shadow: 1px 1px slategray;
+	/*margin-top: auto;*/
 }
 
+a {
+	text-decoration: none;
+}
+
+ul.topnav, ul.bottomnav {
+	position: fixed;
+	width: 100%;
+	list-style: none;
+  margin: 0;
+  padding-left: 0;
+  background-color: rgba(50,60,55,.6);
+}
 
 ul.topnav {
-	list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgba(50,60,55,.6);
+	top: 0;
+}
+
+ul.bottomnav {
+	bottom: 0;
 }
 
 ul.topnav li {
 	float: left;
 }
 
-/*ul.topnav li.topright {
-	float: right;
-}*/
+ul.bottomnav li {
+	display: inline-block;
+}
 
-ul.topnav li a {
+
+ul.topnav li a,
+ul.bottomnav li a {
     display: block;
     color: white;
     text-align: center;
     padding: 1em 1em;
-    text-decoration: none;
+		border-right: 1px solid rgba(50, 60, 55, 1);
+}
+
+
+
+li:last-child {
+	border-right: none;
 }
 
 ul.topnav li.topright {
 	float: right;
-	/*display: block;*/
+	display: block;
 	/*text-align: center;*/
 	/*padding: 0em .6em 0em .6em;*/
 	font-family: helvetica;
@@ -39,80 +60,81 @@ ul.topnav li.topright {
 	font-style: oblique;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: rgba(200,20,20,.4);}
+ul.topnav li a:hover:not(.active),
+ul.bottomnav li a:hover:not(.active) {
+	background-color: rgba(200,20,20,.4);
+}
 
-ul.topnav li a.active {background-color: rgba(45,40,50,.8);}
+ul.topnav li a.active {
+	background-color: rgba(20,200,20,1);
+}
 
 @media screen and (max-width: 600px){
     ul.topnav li.topright,
-    ul.topnav li {float: none;}
+    ul.topnav li, ul.topnav li a {
+			float: none;
+			padding: .3em;
+		}
 }
 
 
 #portrait {
-	width: 300px;
+	width: 20em;
 }
 
 body {
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 5em;
+	margin-left: 0;
+	margin-right: 0;
 	color: white;
 	background-color: gray;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
 	font-family: helvetica;
-	font-weight: normal;
-	text-shadow: 1px 1px slategray;
+	font-weight: lighter;
+	text-shadow: 1px 1px #333;
 }
 
 #main_page {
 	background-image: url("assets/contras.jpg");
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
 }
 
 #about_page {
 	background-image: url("assets/defenceministry.jpg");
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
 }
 
 #contact_page {
 	background-image: url("assets/radoback.jpg");
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
 }
 
 
 .panes {
 	display: inline-block;
 	vertical-align: top;
-	margin: 1em;
-}
-
-#all_about {
+	/*margin: 1em;*/
 	width: intrinsic;           /* Safari */
 	width: -moz-max-content;    /* Firefox/Gecko */
 	width: -webkit-max-content; /* Chrome */
+}
+
+#all_about {
 	float: left;
 	text-align: left;
-	background-color: rgba(0,40,50,.4);
 	padding: 1em;
+	background-color: rgba(0,40,50,.4);
 	border:1px solid rgba(0,40,50,.5);
 	margin: 1em;
 }
 
 #works {
-	width: intrinsic;           /* Safari */
-	width: -moz-max-content;    /* Firefox/Gecko */
-	width: -webkit-max-content; /* Chrome */
-	/*position: relative;*/
+	position: relative;
 	float: right;
 	text-align: right;
 	padding: 1em;
-	background-color: rgba(0,40,50,.3);
-	border:1px solid rgba(0,40,50,.4);
+	background-color: rgba(40,40,10,.5);
+	border:1px solid rgba(80,80,80,.2);
 	margin: 1em;
 	list-style-type: none;
 }
@@ -123,7 +145,7 @@ footer {
 	margin: auto;
 	bottom:0;
 	font-size:1em;
-	/*background-color: #111111;*/
+	background-color: #111111;
 }
 
 
@@ -140,5 +162,5 @@ a:hover {
 }
 
 a:active {
-	color: blue;
+	color: red;
 }
