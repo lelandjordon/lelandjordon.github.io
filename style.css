@@ -44,10 +44,10 @@ ul.bottomnav li a {
 }
 
 
-
-li:last-child {
+/*ul.topnav li a:last-child,
+ul.bottomnav li a:last-child {
 	border-right: none;
-}
+}*/
 
 ul.topnav li.topright {
 	float: right;
@@ -71,8 +71,17 @@ ul.topnav li a.active {
 
 @media screen and (max-width: 600px){
     ul.topnav li.topright,
-    ul.topnav li, ul.topnav li a {
+    ul.topnav li, ul.topnav li a,
+		ul.bottomnav li, ul.bottomnav li a {
 			float: none;
+			padding: .3em;
+		}
+}
+
+@media screen and (max-width: 700px){
+    .panes {
+			display: inline-table;
+			vertical-align: none;
 			padding: .3em;
 		}
 }
@@ -120,7 +129,7 @@ body {
 }
 
 #all_about {
-	float: left;
+	float: right;
 	text-align: left;
 	padding: 1em;
 	background-color: rgba(0,40,50,.4);
@@ -128,7 +137,17 @@ body {
 	margin: 1em;
 }
 
-#works {
+#bio {
+	float: left;
+	text-align: justify;
+	padding: 1em;
+	max-width: 20em;
+	background-color: rgba(0,40,50,.4);
+	border:1px solid rgba(0,40,50,.5);
+	margin: 1em;
+}
+
+#works, #project_gallery {
 	position: relative;
 	float: right;
 	text-align: right;
@@ -137,6 +156,12 @@ body {
 	border:1px solid rgba(80,80,80,.2);
 	margin: 1em;
 	list-style-type: none;
+}
+
+#project_gallery li img {
+	width: 200px;
+	/*float: left;*/
+	/*text-align: left;*/
 }
 
 footer {
