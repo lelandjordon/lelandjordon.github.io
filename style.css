@@ -53,7 +53,6 @@ ul.topnav li ul.topright,
 ul.topnav li.topright {
 	float: right;
 	display: block;
-	/*font-family: helvetica;*/
 	font-size: 1em;
 	list-style: none;
 }
@@ -65,6 +64,15 @@ ul.topnav li a:hover:not(.active),
 #mobiletopnav a:hover:not(.active) {
 	background-color: rgba(200,20,20,.4);
 }
+
+ul.topnav li a(.active),
+.bottomnav a(.active),
+#project_gallery .showoff ul li a(.active),
+.mobilenav li(.active),
+#mobiletopnav a(.active) {
+	background-color: rgba(20,20,200,.9);
+}
+
 
 ul.topnav li a.active {
 	background-color: rgba(20,200,20,1);
@@ -114,6 +122,10 @@ ul.topnav li a.active {
 		#bio p, #bio img {
 			float: none;
 		}
+		#all_about p {
+			max-width: 20em;
+			/*background-color: green;*/
+		}
 }
 
 #portrait {
@@ -159,11 +171,11 @@ body {
 
 #all_about {
 	/*float: left;*/
-	/*text-align: left;*/
-	max-width: 20em;
+	text-align: left;
+	max-width: 40em;
 	padding: 1em;
-	background-color: rgba(0,40,50,.4);
-	border:1px solid rgba(0,40,50,.5);
+	background-color: rgba(0,40,50,.5);
+	border:1px solid rgba(0,40,50,.6);
 	margin: 1em;
 }
 
