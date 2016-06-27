@@ -35,7 +35,8 @@ ul.bottomnav li {
 
 
 ul.topnav li a,
-ul.bottomnav li a {
+ul.mobilenav a,
+.mobilenav a {
     display: block;
     color: white;
     text-align: center;
@@ -44,48 +45,88 @@ ul.bottomnav li a {
 }
 
 
-/*ul.topnav li a:last-child,
-ul.bottomnav li a:last-child {
+/*ul.topnav li a:last-child {
 	border-right: none;
 }*/
 
+ul.topnav li ul.topright,
 ul.topnav li.topright {
 	float: right;
 	display: block;
-	/*text-align: center;*/
-	/*padding: 0em .6em 0em .6em;*/
-	font-family: helvetica;
 	font-size: 1em;
-	font-weight: bold;
-	font-style: oblique;
+	list-style: none;
 }
 
 ul.topnav li a:hover:not(.active),
-ul.bottomnav li a:hover:not(.active) {
+.bottomnav a:hover:not(.active),
+#project_gallery .showoff ul li a:hover:not(.active),
+.mobilenav li:hover:not(.active),
+#mobiletopnav a:hover:not(.active) {
 	background-color: rgba(200,20,20,.4);
 }
+
+ul.topnav li a(.active),
+.bottomnav a(.active),
+#project_gallery .showoff ul li a(.active),
+.mobilenav li(.active),
+#mobiletopnav a(.active) {
+	background-color: rgba(20,20,200,.9);
+}
+
 
 ul.topnav li a.active {
 	background-color: rgba(20,200,20,1);
 }
 
-@media screen and (max-width: 600px){
-    ul.topnav li.topright,
-    ul.topnav li, ul.topnav li a,
-		ul.bottomnav li, ul.bottomnav li a {
-			float: none;
-			padding: .3em;
-		}
+.mobilenav {
+	margin: 0;
+	padding-left: 0;
+	background-color: rgba(10,60,55,.6);
+	display: none;
+	list-style: none;
+	vertical-align: baseline;;
+	width: 100%;
 }
 
-@media screen and (max-width: 700px){
-    .panes {
+.mobilenav li,
+.mobilenav li a {
+	display: block;
+	padding: 0.4em;
+	width: 100%;
+	vertical-align: top;
+}
+
+@media screen and (max-width: 40em){
+    /*ul.topnav li.topright,*/
+    /*ul.topnav li, ul.topnav li a,*/
+		/*ul.bottomnav li, ul.bottomnav li a,*/
+		/*ul.topnav li.topright ul.topright {*/
+			/*float: none;*/
+			/*padding: .3em;*/
+		/*}*/
+		.topnav {
+			display: none;
+		}
+		.mobilenav {
+			display: inline-block;
+		}
+		.panes {
 			display: inline-table;
-			vertical-align: none;
+			vertical-align: top;
 			padding: .3em;
+			margin-top: 12em;
+		}
+		#main_page {
+			font-weight: normal;
+		}
+		#bio p, #bio img {
+			float: none;
+		}
+		#all_about p {
+			max-width: 20em;
+			/*background-color: green;*/
 		}
 }
-
 
 #portrait {
 	width: 20em;
@@ -93,7 +134,7 @@ ul.topnav li a.active {
 
 body {
 	text-align: center;
-	margin-top: 5em;
+	/*margin-top: 5em;*/
 	margin-left: 0;
 	margin-right: 0;
 	color: white;
@@ -107,11 +148,11 @@ body {
 }
 
 #main_page {
-	background-image: url("assets/contras.jpg");
+	background-image: url("assets/defenceministry.jpg");
 }
 
 #about_page {
-	background-image: url("assets/defenceministry.jpg");
+	background-image: url("assets/contras.jpg");
 }
 
 #contact_page {
@@ -122,56 +163,78 @@ body {
 .panes {
 	display: inline-block;
 	vertical-align: top;
-	/*margin: 1em;*/
+	margin: 2em;
 	width: intrinsic;           /* Safari */
 	width: -moz-max-content;    /* Firefox/Gecko */
 	width: -webkit-max-content; /* Chrome */
 }
 
 #all_about {
-	float: right;
+	/*float: left;*/
 	text-align: left;
+	max-width: 40em;
 	padding: 1em;
-	background-color: rgba(0,40,50,.4);
-	border:1px solid rgba(0,40,50,.5);
+	background-color: rgba(0,40,50,.5);
+	border:1px solid rgba(0,40,50,.6);
 	margin: 1em;
 }
 
-#bio {
-	float: left;
-	text-align: justify;
-	padding: 1em;
+#bio p {
+	/*background-color: yellow;*/
 	max-width: 20em;
-	background-color: rgba(0,40,50,.4);
-	border:1px solid rgba(0,40,50,.5);
-	margin: 1em;
+	text-align: left;
+	float:left;
+	padding: 3em;
 }
 
-#works, #project_gallery {
-	position: relative;
-	float: right;
-	text-align: right;
+#bio img {
+	/*float:right;*/
+	/*border: 3px solid red;*/
+}
+
+#works, #project_gallery, #bio {
+	/*position: relative;*/
+	/*float: right;*/
+	/*text-align: right;*/
+	/*max-width: 20em;*/
+	width: 70vw;
 	padding: 1em;
-	background-color: rgba(40,40,10,.5);
-	border:1px solid rgba(80,80,80,.2);
+	background-color: rgba(0,40,50,.5);
+	border:1px solid rgba(0,40,50,.6);
 	margin: 1em;
 	list-style-type: none;
 }
 
-#project_gallery li img {
+#project_gallery li img, #project_gallery li  {
 	width: 200px;
-	/*float: left;*/
-	/*text-align: left;*/
+	float: left;
+	text-align: left;
+	display: inline-block;
 }
 
-footer {
+.showoff {
+	display: inline-block;
+	/*background-color: blue;*/
+}
+
+.showoff li a {
+	display:block;
+	background-color: rgba(0, 40, 50, 0.7);
+	padding: 0.5em;
+	border: 1px solid rgba(20, 40, 50, 0.9);
+}
+
+.showoff li p {
+	padding-left: 1em;
+}
+/*footer {
 	position:fixed;
 	width: 100%;
 	margin: auto;
 	bottom:0;
 	font-size:1em;
 	background-color: #111111;
-}
+}*/
 
 
 a:link {

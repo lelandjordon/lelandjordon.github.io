@@ -3,45 +3,190 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Leland Jordon</title>
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
   <link href="style.css" rel="stylesheet">
   <!-- <script>
   function myFunction() {
-    alert("This was my first-ever Javascript function.  I've learned much more since then!");
-  }
-  </script> -->
+  alert("This was my first-ever Javascript function.  I've learned much more since then!");
+}
+</script> -->
 </head>
 
 <body id="main_page">
 
   <header>
+    <h3 id="mobiletopnav" class="mobilenav">
+      <a data-scroll href="#bottomnav">Contact Info</a>
+    </h3>
+
     <ul class="topnav">
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="codegallery.html">My Code</a></li>
-      <li class="topright"><a href="index.html">Leland Jordon</a></li>
+      <li><a href="index.html">Leland Jordon</a></li>
+      <li><a data-scroll href="#project_gallery">My Code</a></li>
+      <li><a data-scroll href="#all_about">About Me</a></li>
+      <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
+      <li class="topright">
+        <ul class="topright">
+
+          <li><a href="mailto:lelandjordon@mac.com">lelandjordon@mac.com</a></li>
+          <li><a href="https://www.linkedin.com/in/lelandjordon" target="_blank">LinkedIn</a></li>
+          <li><a href="https://profiles.generalassemb.ly/profiles/leland-jordon" target="_blank">General Assembly</a></li>
+          <li><a href="https://twitter.com/lelandjordon1" target="_blank"
+            class="twitter-follow-button" data-show-count="false">
+            @lelandjordon1</a>
+            <!-- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
+          </li>
+        </ul>
+
+      </li>
     </ul>
   </header>
+  <!-- <list> -->
+  <div class="panes">
+    <div id="bio">
+      <h1>What I Do</h1>
+      <div class="showoff">
+        <p>Full-Stack Web Developer, Musician, and Marine. As a steadfast leader, I strive to motivate my teams with inventive ways to solve problems.
+          My music and military experiences taught me the value of being a good team
+          member and a respected manager, helping organizations to achieve their goals.
+        </p>
+        <img src="assets/leland-headshot-cropped.jpg" id="portrait" alt="Selfie" >
+      </div>
+    </div>
+    <!-- </list> -->
+    <div id="project_gallery" class="panes">
+      <h2>Code Gallery</h2>
+      <div class="showoff">
+        <ul>
+          <li><img src="assets/petseekerscreenshot.png" alt="Pet Seeker screenshot" /></li>
+          <li><h3>Pet Seeker, AngularJS front with Rails API</h3></li>
+          <li><p>Inspired by trying to find information about stray animals, I built a
+            Web app for viewing a database of animals for adoption.  I wrote and seeded
+            my own API for viewing and editing through an AngularJS single-page app.
+            This was my final project for my WDI course.</p></li>
+            <li><a href="http://lelandjordon.github.io/pet-seeker/" target="_blank">Pet Seeker Live App</a></li>
+            <li><a href="https://github.com/lelandjordon/pet-seeker" target="_blank">Pet Seeker front end</a></li>
+            <li><a href="https://github.com/lelandjordon/pet-seeker-api" target="_blank">Pet Seeker API repo</a></li>
+            <!-- </li> -->
+          </ul>
+        </div>
+        <div class="showoff">
+          <ul>
+            <li><img src="assets/motov8screenshot.png" alt="Moto.V8 screenshot" /></li>
+            <li><h3>Moto.V8, built in Ruby on Rails</h3></li>
+            <li><p>This was my second class project, a Ruby On Rails single-page app with user authorization.
+              Create an account with a username and password, and you can write and edit posts and comments,
+              but you're prevented from editing other users' posts.  It was also written before my CSS
+              skills improved.</p></li>
+              <li><a href="https://leland-motov8.herokuapp.com" target="_blank">Motov8 live app</a></li>
+              <li><a href="https://github.com/lelandjordon/motov8" target="_blank">Motov8 on Github</a></li>
+            </ul>
+          </div>
+          <div class="showoff">
+            <ul>
+              <li><img src="assets/flashcardscreenshot.png" alt="Flash cards screenshot" /></li>
+              <li><h3>한글 Flash Cards, built in vanilla JavaScript</h3></li>
+              <li><p>This was my first class project, a single-page app to be written in vanilla JavaScript.
+                I took advantage of the UTF-8 standard to write Korean characters and create a basic set of
+                flash cards showing the fundamentals of pronouncing Hangul, or 한글.</p></li>
+              <li><a href="http://lelandjordon.github.io/flashcards/" target="_blank">한글 Flash Cards App</a></li>
+              <li><a href="https://github.com/lelandjordon/flashcards" target="_blank">한글 Flash Cards repo</a></li>
+            </ul>
+          </div>
+        </div>
 
-  <ul class="bottomnav">
+        <!-- <div id="works"> -->
+        <!-- <h1>Links to my code</h1> -->
+        <!-- <li><a href="https://github.com/lelandjordon" target="_blank">GitHub account</a></li> -->
+        <!-- </div> -->
+
+
+
+        <div id="all_about">
+          <h1>About Leland</h1>
+          <section>
+            <h3>Recent Career and Education</h3>
+            <ul>
+              <li>Web Developer, General Assembly</li>
+              <li>SSgt, US Marine Corps</li>
+              <li>BA Music Performance</li>
+            </ul>
+            <p>
+              I was reaching the end of my military music career and looking for
+              ideas for building a second career.  I remembered that I was
+              learning computer programming and physical science in high school,
+              and I decided to take a look at modern computer coding.
+            </p>
+            <p>
+              I was pointed towards online tutorials to get a feel for code.  It
+              seemed easy, so I asked a friend, is it easier than I thought or
+              am I just scratching the surface?  She said, "It's both.  It can be
+              easy to start, but there is a lot to keep learning."
+            </p>
+            <p>
+              So, I took some weekend workshops at <a href="https://generalassemb.ly">
+                General Assembly</a> here in Washington, DC, in basic Web programming
+                and iOS app development.  Impressed by my progress and by the
+                community at General Assembly, and with the encouragement of my
+                family and friends, I took the <a href="https://generalassemb.ly/education/web-development-immersive">
+                  Web Development Immersive
+                </a> course in the spring of 2016.  What you'll find on my page here
+                is just the beginning of what I've been learning about code.
+            </p>
+          </section>
+          <!-- <section>
+          <p>Music Ensembles</p>
+          <ul>
+          <li>Drum and Bugle Corps</li>
+          <li>Wind Ensemble</li>
+          <li>Community Bands</li>
+          <li>Jazz Bands</li>
+          <li>Brass Quintets</li>
+          <li>Soloist</li>
+        </ul>
+      </section>
+      <section>
+      <p>Travels</p>
+      <ul>
+      <li>United States</li>
+      <li>England</li>
+      <li>Scotland</li>
+      <li>Norway</li>
+      <li>France</li>
+      <li>Germany</li>
+      <li>Austria</li>
+      <li>South Korea</li>
+    </ul>
+  </section> -->
+</div>
+</div>
+
+<!-- <ul class="bottomnav"> -->
+  <ul id="bottomnav" class="mobilenav">
+    <!-- <li><a href="index.html">Leland Jordon</a></li> -->
+    <!-- <li><a data-scroll href="#project_gallery">My Code</a></li> -->
+    <!-- <li><a data-scroll href="#all_about">About Me</a></li> -->
+    <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
     <li><a href="mailto:lelandjordon@mac.com">lelandjordon@mac.com</a></li>
-    <li><a href="https://www.linkedin.com/in/lelandjordon" target="_blank">LinkedIn Profile</a></li>
-    <li><a href="https://profiles.generalassemb.ly/profiles/leland-jordon" target="_blank">General Assembly Profile</a></li>
+    <li><a href="https://www.linkedin.com/in/lelandjordon" target="_blank">LinkedIn</a></li>
+    <li><a href="https://profiles.generalassemb.ly/profiles/leland-jordon" target="_blank">General Assembly</a></li>
     <li><a href="https://twitter.com/lelandjordon1" target="_blank"
       class="twitter-follow-button" data-show-count="false">
-      Follow @lelandjordon1</a>
+      Twitter</a>
       <!-- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
-      </li>
+    </li>
   </ul>
+<!-- </ul> -->
 
 <!--
-  <footer>
-    <button onclick="myFunction()">Click Me for a popup box</button>
+<footer>
+<button onclick="myFunction()">Click Me for a popup box</button>
 
-    <p id="date">
+<p id="date">
 
-      <script>
-      document.getElementById("date").innerHTML = Date();
-      </script>
-    </p>
-  </footer> -->
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+</p>
+</footer> -->
 
 </body>
