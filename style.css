@@ -80,11 +80,11 @@ ul.topnav li a.active {
 
 .mobilenav {
 	margin: 0;
-	padding-left: 0;
+	padding: 0;
 	background-color: rgba(10,60,55,.6);
 	display: none;
 	list-style: none;
-	vertical-align: baseline;;
+	/*vertical-align: baseline;*/
 	width: 100%;
 }
 
@@ -92,11 +92,11 @@ ul.topnav li a.active {
 .mobilenav li a {
 	display: block;
 	padding: 0.4em;
-	width: 100%;
+	/*width: 100%;*/
 	vertical-align: top;
 }
 
-@media screen and (max-width: 60em){
+@media screen and (max-width: 800px){
     /*ul.topnav li.topright,*/
     /*ul.topnav li, ul.topnav li a,*/
 		/*ul.bottomnav li, ul.bottomnav li a,*/
@@ -110,22 +110,26 @@ ul.topnav li a.active {
 		.mobilenav {
 			display: inline-block;
 		}
-		.panes {
-			display: inline-table;
-			vertical-align: top;
-			padding: .3em;
-			margin-top: 12em;
-		}
 		#main_page {
 			font-weight: normal;
 		}
-		#bio p, #bio img {
+		#bio p, #bio img,
+		#project_gallery *,
+		#all_about * {
 			float: none;
+			width: 60vw;
+			/*margin-left: 0;*/
 		}
-		#all_about p {
-			max-width: 20em;
+		.panes * {
+			/*display: inline-block;*/
+			/*vertical-align: left;*/
+			/*width: 80vw;*/
 			/*background-color: green;*/
+			/*position: center;*/
 		}
+		/*#all_about * {*/
+			/*max-width: 80%;*/
+		/*}*/
 }
 
 #portrait {
@@ -143,7 +147,7 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	font-family: helvetica;
-	font-weight: lighter;
+	font-weight: light;
 	text-shadow: 1px 1px #333;
 }
 
@@ -188,7 +192,8 @@ body {
 }
 
 #bio img {
-	/*float:right;*/
+	float:right;
+	width: fit-content;
 	/*border: 3px solid red;*/
 }
 
