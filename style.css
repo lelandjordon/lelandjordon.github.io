@@ -96,7 +96,7 @@ ul.topnav li a.active {
 	vertical-align: top;
 }
 
-@media screen and (max-width: 40em){
+@media screen and (max-width: 60em){
     /*ul.topnav li.topright,*/
     /*ul.topnav li, ul.topnav li a,*/
 		/*ul.bottomnav li, ul.bottomnav li a,*/
