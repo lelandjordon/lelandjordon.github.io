@@ -1,0 +1,37 @@
+
+.mobilenav {
+	margin: 0;
+	padding: 0;
+	background-color: rgba(10,60,55,.6);
+	list-style: none;
+	width: 100%;
+}
+
+.mobilenav li,
+.mobilenav li a {
+	display: block;
+	padding: 0.4em;
+	vertical-align: top;
+}
+
+#mobilecontent {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+#mobilecontent * {
+  float: left;
+  display: inline;
+}
+
+#mobilecontent .showoff {
+  padding: 1em;
+  background-color: rgba(0,40,50,.5);
+	border:1px solid rgba(0,40,50,.6);
+}
+
+#mobilecontent #project_gallery li img, #mobilecontent #project_gallery li a {
+  background-color: rgba(0,40,50,.5);
+	border:1px solid rgba(0,40,50,.6);
+  padding: 0.7em;
+}

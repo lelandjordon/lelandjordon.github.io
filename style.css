@@ -1,7 +1,6 @@
 h1 {
 	font-family: helvetica;
 	text-shadow: 1px 1px slategray;
-	/*margin-top: auto;*/
 }
 
 a {
@@ -45,10 +44,6 @@ ul.mobilenav a,
 }
 
 
-/*ul.topnav li a:last-child {
-	border-right: none;
-}*/
-
 ul.topnav li ul.topright,
 ul.topnav li.topright {
 	float: right;
@@ -84,7 +79,6 @@ ul.topnav li a.active {
 	background-color: rgba(10,60,55,.6);
 	display: none;
 	list-style: none;
-	/*vertical-align: baseline;*/
 	width: 100%;
 }
 
@@ -92,53 +86,32 @@ ul.topnav li a.active {
 .mobilenav li a {
 	display: block;
 	padding: 0.4em;
-	/*width: 100%;*/
 	vertical-align: top;
 }
 
-@media screen and (max-width: 800px){
-    /*ul.topnav li.topright,*/
-    /*ul.topnav li, ul.topnav li a,*/
-		/*ul.bottomnav li, ul.bottomnav li a,*/
-		/*ul.topnav li.topright ul.topright {*/
-			/*float: none;*/
-			/*padding: .3em;*/
-		/*}*/
+#mobilecontent {
+	display: none;
+}
+
+@media screen and (max-width: 736px){
+		#fullcontent {
+			display: none;
+		}
+		#mobilecontent {
+			display: inline-block;
+		}
 		.topnav {
 			display: none;
 		}
 		.mobilenav {
 			display: inline-block;
 		}
-		#main_page {
-			font-weight: normal;
-		}
-		#bio p, #bio img,
-		#project_gallery *,
-		#all_about * {
-			float: none;
-			width: 60vw;
-			/*margin-left: 0;*/
-		}
-		.panes * {
-			/*display: inline-block;*/
-			/*vertical-align: left;*/
-			/*width: 80vw;*/
-			/*background-color: green;*/
-			/*position: center;*/
-		}
-		/*#all_about * {*/
-			/*max-width: 80%;*/
-		/*}*/
+
 }
 
-#portrait {
-	width: 20em;
-}
 
 body {
 	text-align: center;
-	/*margin-top: 5em;*/
 	margin-left: 0;
 	margin-right: 0;
 	color: white;
@@ -184,17 +157,15 @@ body {
 }
 
 #bio p {
-	/*background-color: yellow;*/
 	max-width: 20em;
 	text-align: left;
 	float:left;
 	padding: 3em;
 }
 
-#bio img {
-	float:right;
-	width: fit-content;
-	/*border: 3px solid red;*/
+#portrait {
+	float: right;
+	max-width: 15em;
 }
 
 #works, #project_gallery, #bio {
@@ -219,7 +190,6 @@ body {
 
 .showoff {
 	display: inline-block;
-	/*background-color: blue;*/
 }
 
 .showoff li a {
@@ -232,14 +202,6 @@ body {
 .showoff li p {
 	padding-left: 1em;
 }
-/*footer {
-	position:fixed;
-	width: 100%;
-	margin: auto;
-	bottom:0;
-	font-size:1em;
-	background-color: #111111;
-}*/
 
 
 a:link {
