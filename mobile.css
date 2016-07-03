@@ -34,4 +34,6 @@
   background-color: rgba(0,40,50,.5);
 	border:1px solid rgba(0,40,50,.6);
   padding: 0.7em;
+  width: 11em;
+  text-align: center;
 }
