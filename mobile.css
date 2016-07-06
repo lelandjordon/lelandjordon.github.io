@@ -30,7 +30,9 @@
 	border:1px solid rgba(0,40,50,.6);
 }
 
-#mobilecontent #project_gallery li img, #mobilecontent #project_gallery li a {
+#mobilecontent #project_gallery li img,
+#mobilecontent #project_gallery li a,
+#mobilecontent #all_about a {
   background-color: rgba(0,40,50,.5);
 	border:1px solid rgba(0,40,50,.6);
   padding: 0.7em;
