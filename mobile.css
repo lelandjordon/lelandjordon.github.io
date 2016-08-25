@@ -21,7 +21,7 @@
 
 #mobilecontent * {
   float: left;
-  display: inline;
+  /*display: inline;*/
 }
 
 #mobilecontent .showoff {
@@ -38,4 +38,10 @@
   padding: 0.7em;
   width: 11em;
   text-align: center;
+}
+
+#mobilecontent #all_about ul li {
+	/*display: block;*/
+	float: none;
+	list-style-type: disc;
 }
